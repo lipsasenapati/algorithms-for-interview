@@ -3,16 +3,12 @@ from collections import defaultdict
 class Graph:
     def __init__(self):
         self.graph = defaultdict(list)
-        print(self.graph)
 
     def addEdge(self,u,v):
         self.graph[u].append(v)
-        print(self.graph)
 
     def BFS(self,source):
         visited = [False] * (max(self.graph)+1)
-        print(self.graph)
-        print(visited)
         queue = []
         queue.append(source)
         visited[source] = True
