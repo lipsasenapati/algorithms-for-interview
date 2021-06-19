@@ -1,3 +1,9 @@
+#Adjacency lists - map store keys are levels and we have a list of nodes as values 
+
+#0 : [1,2]
+#1 : [2]
+#2 : [0,3]
+
 from collections import defaultdict
 
 class Graph:
